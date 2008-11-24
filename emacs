@@ -58,7 +58,7 @@
 ;; Twitter
 (require 'twittering-mode)
 (setq twittering-username "wnoronha")
-(setq twittering-password "oiu987")
+(setq twittering-password "xxx")
 
 ;; Cursor Preferences
 (cond (window-system
@@ -137,7 +137,7 @@
     (shell-command-on-region (point-min) (point-max) "ruby"))
 
 (defun my-ruby-mode-hook ()
-  (setq standard-indent 2)
+  (setq standard-indent 4)
   (pabbrev-mode t)
   (ruby-electric-mode t)
   (define-key ruby-mode-map "\C-c\C-a" 'ruby-eval-buffer))
@@ -164,6 +164,9 @@
 (require 'php-mode)
 
 ;; HTML Mode 
+
+;; Css Mode
+(require 'css-mode)
 
 ;; Javascript Mode
 
